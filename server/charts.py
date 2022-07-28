@@ -11,9 +11,9 @@ def get_values(parameter):
     values = []
 
     for i in example_data:
-	values.append(i[0][parameter])
+        values.append(i[0][parameter])
 
-	return values
+    return values
 
 
 # Creates an array of data points with all values of two parameters.
@@ -24,9 +24,9 @@ def create_data_points(parameter1, parameter2):
     data_points = []
 
     for i in range(len(values1)):
-	data_point = [values1[i], values2[i]]
+        data_point = [values1[i], values2[i]]
 
-	data_points.append(data_point)
+        data_points.append(data_point)
 
     return data_points
 
@@ -36,22 +36,22 @@ def create_2d_scatter(parameter1, parameter2):
     data_points = create_data_points(parameter1, parameter2)
 
     json_string = {
-	'series': [
-	    {'name': 'SAMPLE', 
-	    'data': data_points},
-	],
-	'options': {
-	    'chart': {
-		'height': 350, 
-		'type': 'scatter', 
-		'zoom': {
-		    'enabled': True, 
-		    'type': 'xy'
-		}
-	    },
-	    'xaxis': {'tickAmount': 10,},
-	    'yaxis': {'tickAmount': 7}
-	}
+        'series': [
+            {'name': 'SAMPLE', 
+            'data': data_points},
+        ],
+        'options': {
+            'chart': {
+            'height': 350, 
+            'type': 'scatter', 
+            'zoom': {
+                'enabled': True, 
+                'type': 'xy'
+            }
+            },
+            'xaxis': {'tickAmount': 10,},
+            'yaxis': {'tickAmount': 7}
+        }
     }
 
     return json_string
