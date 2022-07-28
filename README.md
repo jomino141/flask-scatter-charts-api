@@ -32,7 +32,7 @@ Run the API server like the following:
 python3 app.py
 ```
 ### 4. Set up the frontend
-Install all necessary packages with the following command:
+Navigate into the client directory and install all necessary packages with the following command:
 ```
 npm install
 ```
