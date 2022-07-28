@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Define API's index route.
 @app.route('/')
 def index():
-	return 'API for generating scatter ApexCharts.'
+    return 'API for generating scatter ApexCharts.'
 
 
 # Creates a JSON for a 2D scatter chart containing data points.
