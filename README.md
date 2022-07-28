@@ -19,29 +19,12 @@ https://apexcharts.com/
 ## Set up the project on your local machine
 ### 1. Clone the project
 Clone the project to your machine. Make sure Python3 and pip are already installed on your system.
-### 2. Create a virtual environment
-Install the virtual environment tool with the following command:
-```
-pip3 install virtualenv
-```
-Navigate into the project folder and create a virtual environment like the following:
-```
-virtualenv <name>
-```
-Activate the virtual environment with the following command:
-```
-. <name>/bin/activate
-```
-When you are done working, deactivate it like the following:
-```
-deactivate
-```
-### 3. Install requirements
+### 2. Install requirements
 Install all requirements with the following command:
 ```
 pip3 install -r requirements.txt
 ```
-### 4. Run the app
+### 3. Run the app
 Run the app like the following:
 ```
 python3 app.py
