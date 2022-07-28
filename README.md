@@ -8,6 +8,8 @@ This API requires an array including multiple elements that follow this structur
 ```
 The purpose of the API is to generate a scatter chart based on 2 or 3 out of the first 5 values.
 
+An example for the usage within a React frontend is provided in the client directory. 
+
 The charts are intended to work within a React App. Although not guaranteed, they should also work with other frameworks.
 
 ## ApexCharts
@@ -20,12 +22,22 @@ https://apexcharts.com/
 ### 1. Clone the project
 Clone the project to your machine. Make sure Python3 and pip are already installed on your system.
 ### 2. Install requirements
-Install all requirements with the following command:
+Navigate into the server directory and install all requirements with the following command:
 ```
 pip3 install -r requirements.txt
 ```
-### 3. Run the app
-Run the app like the following:
+### 3. Run the API server
+Run the API server like the following:
 ```
 python3 app.py
+```
+### 4. Set up the frontend
+Install all necessary packages with the following command:
+```
+npm install
+```
+### 5. Run the frontend
+Run the frontend like the following:
+```
+npm start
 ```
