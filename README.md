@@ -1,5 +1,5 @@
 # Scatter ApexCharts API
-An API to generate JSON's for Scatter ApexCharts.
+An API to generate JSON's for 2D and 3D Scatter ApexCharts. 
 
 ## Usage
 This API requires an array including multiple elements that follow this structure:
