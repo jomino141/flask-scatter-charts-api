@@ -1,4 +1,4 @@
-# Scatter ApexCharts API
+# Flask ApexCharts API
 An API to generate JSON's for 2D and 3D Scatter ApexCharts. 
 
 ## Usage
