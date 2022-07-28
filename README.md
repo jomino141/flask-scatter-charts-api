@@ -1,5 +1,5 @@
 # Flask ApexCharts API
-An API built with Flask to generate JSON's for 2D and 3D Scatter ApexCharts. 
+A REST API built with Flask to generate JSON's for 2D and 3D Scatter ApexCharts. 
 
 ## Usage
 This API requires an array including multiple elements that follow this structure:
