@@ -62,7 +62,7 @@ def create_3d_json(parameter1, parameter2, parameter3):
     values2 = get_values(parameter2)
     values3 = get_values(parameter2)
 
-    json_string = {
+    json_dict = {
         'x': values1,
         'y': values2,
         'z': values3,
@@ -76,4 +76,6 @@ def create_3d_json(parameter1, parameter2, parameter3):
         }
     }
 
-    return json_string
+    json_list = [json_dict]
+
+    return json.dumps(json_list)
