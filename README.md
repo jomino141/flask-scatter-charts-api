@@ -1,5 +1,5 @@
-# Flask ApexCharts API
-An API built with Flask to generate JSON's for 2D and 3D Scatter ApexCharts. 
+# Flask Scatter Chart API
+An API built with Flask to generate JSON's for 2D and 3D Scatter Charts. All 2D charts will be generated with ApexCharts and all 3D charts with Plotly Open Source Graphing Libraries.
 
 ## Usage
 This API requires an array including multiple elements that follow this structure:
@@ -13,9 +13,10 @@ An example for the usage within a React frontend is provided in the client direc
 The charts are intended to work within a React App. Although not guaranteed, they should also work with other frameworks.
 
 ## ApexCharts
-For further information on ApexCharts check out their website:
+For further information on ApexCharts and Plotly Open Source Graphing Libraries check out their websites:
 ```
 https://apexcharts.com/
+https://plotly.com/graphing-libraries/
 ```
 
 ## Set up the project on your local machine
