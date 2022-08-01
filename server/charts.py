@@ -16,7 +16,7 @@ def get_values(parameter):
     return values
 
 
-# Creates an array of data points with all values of two parameters.
+# Creates an array of data points with all values of two or three parameters.
 def create_data_points(parameter1, parameter2):
     values1 = get_values(parameter1)
     values2 = get_values(parameter2)
@@ -32,7 +32,7 @@ def create_data_points(parameter1, parameter2):
 
 
 # Creates a JSON string for a 2D scatter chart containing data points.
-def create_2d_scatter(parameter1, parameter2):
+def create_2d_json(parameter1, parameter2):
     data_points = create_data_points(parameter1, parameter2)
 
     json_string = {
@@ -51,6 +51,28 @@ def create_2d_scatter(parameter1, parameter2):
             },
             'xaxis': {'tickAmount': 10,},
             'yaxis': {'tickAmount': 7}
+        }
+    }
+
+    return json_string
+
+
+def create_3d_json(parameter1, parameter2, parameter3):
+    values1 = get_values(parameter1)
+    values2 = get_values(parameter2)
+    values3 = get_values(parameter2)
+
+    json_string = {
+        'x': values1,
+        'y': values2,
+        'z': values3,
+        'mode': 'markers',
+        'type': 'scatter3d',
+        'marker': {
+            'size': 6,
+            'color': values3,
+            'colorscale': 'Viridis',
+            'opacity': 0.8
         }
     }
 
