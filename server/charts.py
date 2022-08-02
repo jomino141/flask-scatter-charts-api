@@ -60,7 +60,7 @@ def create_2d_json(parameter1, parameter2):
 def create_3d_json(parameter1, parameter2, parameter3):
     values1 = get_values(parameter1)
     values2 = get_values(parameter2)
-    values3 = get_values(parameter2)
+    values3 = get_values(parameter3)
 
     json_dict = {
         'x': values1,
