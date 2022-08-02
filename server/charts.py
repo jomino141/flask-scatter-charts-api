@@ -69,9 +69,7 @@ def create_3d_json(parameter1, parameter2, parameter3):
         'mode': 'markers',
         'type': 'scatter3d',
         'marker': {
-            'size': 6,
-            'color': values3,
-            'colorscale': 'Viridis',
+            'size': 2,
             'opacity': 0.8
         }
     }
