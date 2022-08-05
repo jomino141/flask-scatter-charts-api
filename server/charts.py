@@ -1,5 +1,7 @@
 import json
 
+#Array with names for axis
+names = ['Makespan', 'Total tardiness', 'Penalties', 'Major Setup S1', 'Major Setup S2']
 
 # Read array from local example JSON file.
 with open('example.json', 'r') as file:
@@ -49,8 +51,8 @@ def create_2d_json(parameter1, parameter2):
                 'type': 'xy'
             }
             },
-            'xaxis': {'tickAmount': 10,},
-            'yaxis': {'tickAmount': 7}
+            'xaxis': {'tickAmount': 10, 'title': {'text': names[parameter1]}},
+            'yaxis': {'tickAmount': 7, 'title': {'text': names[parameter2]}}
         }
     }
 

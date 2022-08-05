@@ -57,7 +57,7 @@ function EvaluationView(props) {
         temp += "/";
         temp += chosenValues[i];
       }
-      setData2('undefined')
+      setData2("undefined");
       fetch(temp)
         .then((res) => res.json())
         .then((data) => {
@@ -70,7 +70,7 @@ function EvaluationView(props) {
         temp += "/";
         temp += chosenValues[j];
       }
-      setData('undefined')
+      setData("undefined");
       fetch(temp)
         .then((res) => res.json())
         .then((data2) => {
@@ -115,27 +115,38 @@ function EvaluationView(props) {
         </FormControl>
       </Container>
       <FormControl fullWidth>
-      {
-        // Check if data has already been fetched from the backend.
-        typeof data.options === "undefined" ? (
-          <p>Loading Chart...</p>
-        ) : (
-          <Chart
-            options={data.options}
-            series={data.series}
-            type="scatter"
-            height={350}
-          />
-        )
-      }
-      {
-        // Check if data has already been fetched from the backend.
-        typeof data2[0].marker === "undefined" ? (
-          <p>Loading Chart...</p>
-        ) : (
-          <Plot data={data2} layout={{ width: 500, height: 500 }} />
-        )
-      }
+        {
+          // Check if data has already been fetched from the backend.
+          typeof data.options === "undefined" ? (
+            <p>Loading Chart...</p>
+          ) : (
+            <Chart
+              options={data.options}
+              series={data.series}
+              type="scatter"
+              height={350}
+            />
+          )
+        }
+        {
+          // Check if data has already been fetched from the backend.
+          typeof data2[0].marker === "undefined" ? (
+            <p>Loading Chart...</p>
+          ) : (
+            <Plot
+              data={data2}
+              layout={{
+                width: 1000,
+                height: 1000,
+                scene: {
+                  xaxis: { title: objectiveValues[chosenValues[0]].text },
+                  yaxis: { title: objectiveValues[chosenValues[1]].text },
+                  zaxis: { title: objectiveValues[chosenValues[2]].text },
+                },
+              }}
+            />
+          )
+        }
       </FormControl>
     </React.Fragment>
   );
