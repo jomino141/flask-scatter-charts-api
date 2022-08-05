@@ -11,7 +11,7 @@ def get_values(parameter):
     values = []
 
     for i in example_data:
-        values.append(i[0][parameter])
+        values.append(i[parameter])
 
     return values
 
