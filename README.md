@@ -4,7 +4,7 @@ An API built with Flask to generate JSON's for 2D and 3D Scatter Charts. All 2D 
 ## Usage
 This API requires an array including multiple elements that follow this structure:
 ```
-[[value1, value2, value3, value4, value5],[value6, value7, value8]]
+[[value1, value2, value3, value4, value5],[value6, value7, value8, value9]],[[...
 ```
 The purpose of the API is to generate a scatter chart based on 2 or 3 out of the first 5 values.
 
